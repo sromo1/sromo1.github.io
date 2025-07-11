@@ -1,0 +1,11 @@
+---
+title: 'Scaling Vision Transformers'
+collection: publications
+permalink: /publications/scaling22
+date: 2021-06-08
+authors: 'Xiaohua Zhai, Alexander Kolesnikov, Neil Houlsby, Lucas Beyer'
+venue: 'Computer Vision and Pattern Recognition (CVPR), 2022'
+paperurl: 'https://arxiv.org/abs/2106.04560'
+---
+
+Attention-based neural networks such as the Vision Transformer (ViT) have recently attained state-of-the-art results on many computer vision benchmarks. Scale is a primary ingredient in attaining excellent results, therefore, understanding a model's scaling properties is a key to designing future generations effectively. While the laws for scaling Transformer language models have been studied, it is unknown how Vision Transformers scale. To address this, we scale ViT models and data, both up and down, and characterize the relationships between error rate, data, and compute. Along the way, we refine the architecture and training of ViT, reducing memory consumption and increasing accuracy of the resulting models. As a result, we successfully train a ViT model with two billion parameters, which attains a new state-of-the-art on ImageNet of 90.45% top-1 accuracy. The model also performs well for few-shot transfer, for example, reaching 84.86% top-1 accuracy on ImageNet with only 10 examples per class.

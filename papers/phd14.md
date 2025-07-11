@@ -1,0 +1,12 @@
+---
+title: 'Efficient Bayesian Active Learning and Matrix Modelling'
+collection: publications
+permalink: /publications/phd14
+date: 2014-11-11
+authors: 'Neil Houlsby'
+venue: 'Doctor of Philosophy (PhD), University of Cambridge'
+paperurl: 'https://www.repository.cam.ac.uk/handle/1810/248885'
+---
+
+With the advent of the Internet and growth of storage capabilities, large collections of unlabelled data are now available. However, collecting supervised labels can be costly. Active learning addresses this by selecting, sequentially, only the most useful data in light of the information collected so far. The online nature of such algorithms often necessitates efficient computations. Thus, we present a framework for information theoretic Bayesian active learning, named Bayesian Active Learning by Disagreement, that permits efficient and accurate computations of data utility. Using this framework we develop new techniques for active Gaussian process modelling and adaptive quantum tomography. The latter has been shown, in both simulation and laboratory experiments, to yield faster learning rates than any non-adaptive design. Numerous datasets can be represented as matrices. Bayesian models of matrices are becoming increasingly popular because they can handle noisy or missing elements, and are extensible to different data-types. However, efficient inference is crucial to allow these flexible probabilistic models to scale to large real-world datasets. Binary matrices are a ubiquitous datatype, so we present a stochastic inference algorithm for fast learning in this domain. Preference judgements are a common, implicit source of binary data. We present a hybrid matrix factorization/Gaussian process model for collaborative learning from multiple users' preferences. This model exploits both the structure of the matrix and can incorporate additional covariate information to make accurate predictions. We then combine matrix modelling with active learning and propose a new algorithm for cold-start learning with ordinal data, such as ratings. This algorithm couples Bayesian Active Learning by Disagreement with a heteroscedastic model to handle varying levels of noise. This ordinal matrix model is also used to analyze psychometric questionnaires; we analyze classical assumptions made in psychometrics and show that active learning methods can reduce questionnaire lengths substantially.
+

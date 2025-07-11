@@ -1,0 +1,11 @@
+---
+title: 'A Filtering Approach to Stochastic Variational Inference'
+collection: publications
+permalink: /publications/filtering14
+date: 2014-12-08
+authors: 'Neil Houlsby, David Blei'
+venue: 'Neural Information Processing Systems (NeurIPS), 2014'
+paperurl: 'http://papers.nips.cc/paper/5556-a-filtering-approach-to-stochastic-variational-inference'
+---
+
+Stochastic variational inference (SVI) uses stochastic optimization to scale up Bayesian computation to massive data. We present an alternative perspective on SVI as approximate parallel coordinate ascent. SVI trades-off bias and variance to step close to the unknown true coordinate optimum given by batch variational Bayes (VB). We define a model to automate this process. The model infers the location of the next VB optimum from a sequence of noisy realizations. As a consequence of this construction, we update the variational parameters using Bayes rule, rather than a hand-crafted optimization schedule. When our model is a Kalman filter this procedure can recover the original SVI algorithm and SVI with adaptive steps. We may also encode additional assumptions in the model, such as heavy-tailed noise. By doing so, our algorithm outperforms the original SVI schedule and a state-of-the-art adaptive SVI algorithm in two diverse domains.

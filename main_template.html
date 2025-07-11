@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website for AI research scientist, Neil Houlsby">
+  <title>Neil Houlsby</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="go.ico" type="image/x-icon">
+  <script defer src="script.js"></script>
+  <script src="toggle_abstract.js"></script>
+</head>
+
+<body class="content-container">
+
+  <div class="profile-section">
+    <img src="{{ profile_picture }}" alt="Profile Picture">
+    {{ profile }}
+    <div class="contact-social-links">
+      <a href="#" onclick="copyToClipboard('neil@anthropic.com')">neil@anthropic.com</a>
+      <a href="https://twitter.com/neilhoulsby" target="_blank">X / Twitter</a>
+      <a href="https://scholar.google.com/citations?user=sm1-TZMAAAAJ" target="_blank">GScholar</a>
+    </div>
+  </div>
+
+  <main>
+    <article id="about">
+      <h2>About</h2>
+      {{ about }}
+    </article>
+
+
+    <section id="selected">
+      <h2>Selected Publications</h2>
+      <div class="image-panel">
+        <div class="image-row">
+          <div class="image-container">
+            <a href="#vit20">
+              <img src="img/vit.png" alt="ViT figure">
+              <span class="overlay-text">Vision Transformers</span>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="#mixer21">
+              <img src="img/mixer.png" alt="Mixer figure">
+              <span class="overlay-text">MLP Mixer</span>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="#pali22">
+              <img src="img/pali.png" alt="PaLI figure">
+              <span class="overlay-text">PaLI Vision-Language Model</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="image-row">
+          <div class="image-container">
+            <a href="#parameter19">
+              <img src="img/adapters.png" alt="Adpaters figure">
+              <span class="overlay-text">Parameter-efficient Adapter Layers</span>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="#bigtransfer19">
+              <img src="img/bit.png" alt="BiT figure">
+              <span class="overlay-text">Big Transfer</span>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="#bald11">
+              <img src="img/bald.png" alt="BALD figure">
+              <span class="overlay-text">Bayesian Active Learning with Disagreement</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="publications">
+      <h2>All Publications</h2>
+      <div>
+        {% for paper_entry in paper_entries %}
+        {{ paper_entry }}
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+
+    <script>
+    function copyToClipboard(text) {
+      var dummy = document.createElement("textarea");
+      document.body.appendChild(dummy);
+      dummy.value = text;
+      dummy.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummy);
+      alert("`" + text + "`" + " copied to clipboard.");
+    }
+  </script>
+
+</body>
+
+</html>

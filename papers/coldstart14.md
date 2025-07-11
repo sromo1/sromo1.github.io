@@ -1,0 +1,12 @@
+---
+title: 'Cold-start Active Learning with Robust Ordinal Matrix Factorization'
+collection: publications
+permalink: /publications/coldstart14
+date: 2014-06-21
+authors: 'Cold-start Active Learning with Robust Ordinal Matrix Factorization'
+venue: 'International Conference on Machine Learning (ICML), 2014'
+paperurl: 'http://proceedings.mlr.press/v32/houlsby14.html'
+---
+
+We present a new matrix factorization model for rating data and a corresponding active learning strategy to address the cold-start problem. Cold-start is one of the most challenging tasks for recommender systems: what to recommend with new users or items for which one has little or no data. An approach is to use active learning to collect the most useful initial ratings. However, the performance of active learning depends strongly upon having accurate estimates of i) the uncertainty in model parameters and ii) the intrinsic noisiness of the data. To achieve these estimates we propose a heteroskedastic Bayesian model for ordinal matrix factorization. We also present a computationally efficient framework for Bayesian active learning with this type of complex probabilistic model. This algorithm successfully distinguishes between informative and noisy data points. Our model yields state-of-the-art predictive performance and, coupled with our active learning strategy, enables us to gain useful information in the cold-start setting from the very first active sample.
+
