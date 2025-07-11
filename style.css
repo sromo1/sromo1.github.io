@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 body,
 h1,
@@ -8,7 +7,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Open Sans', monospace;
 }
 
 html {
