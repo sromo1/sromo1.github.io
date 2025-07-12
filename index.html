@@ -29,16 +29,13 @@
     <article id="about">
       <h2>About</h2>
       <p><span style="color: red"><strong>New (Feb 2025):</strong></span> 
-I am a Member Of Technical Staff at Anthropic, and lead of our new Zurich site.
-We work on the research and development of safe and aligned frontier language models, with a focus on multimodal capabilities.</p>
-<p>Previously, I was a Senior Staff Research Scientist and manager at Google Deepmind and Google Brain, where I led a team working on neural architectures, vision, and language models.
-I have been fortunate to work on many interesting topics, including Transformers [<a href="https://arxiv.org/abs/2010.11929">ViT</a>] and other neural architectures [<a href="https://arxiv.org/abs/2105.01601">Mixer</a>], parameter-efficient finetuning [<a href="https://arxiv.org/abs/1902.00751">Adapters</a>], scaling [<a href="https://arxiv.org/abs/2302.05442">VIT-22b</a>, <a href="https://arxiv.org/abs/2106.05974">V-MoE</a>], and vision-language models [<a href="https://arxiv.org/abs/2312.11805">Gemini</a>, PaLI <a href="https://arxiv.org/abs/2209.06794">A</a>, <a href="https://arxiv.org/abs/2305.18565">B</a>, <a href="https://arxiv.org/abs/2407.07726">C</a>].</p>
-<p>I received my PhD from the Cambridge Computational and Biological Learning lab, supervised by Prof. Zoubin Ghahramani and Prof. Máté Lengyel, where I studied statistical machine learning and cognitive science.</p>
-    </article>
+I am a Senior AI Engineer at the AI & Data practice of Ernst & Young. I help design, develop and implement AI solutions for a wide variety of clients in different indystry sectors.</p>
+<p>Before my current role,I worksed at the Financial Services Risk Management practice of EY where I provided integrated services across the production pipeline of machine learning models (dataset preparation, model design, training, testing, reporting and validation) used in risk management operations for the largest North American financial institutions.</p>
+<p>I received my PhD from the University of Maryland, College Park, under the supervision of Dr. Jelena Srebric. During my tenure as a Research Associate I worked on several topics, including physics-based model development for desalination systems [<a href="http://desal.city.umd.edu/">DESAL</a>], modeling and simulation of building energy systems and ventilation.</p>
+     </article>
 
-
-    <section id="selected">
-      <h2>Selected Publications</h2>
+    <section id="projects">
+      <h2>Selected Projects</h2>
       <div class="image-panel">
         <div class="image-row">
           <div class="image-container">
@@ -89,120 +86,16 @@ I have been fortunate to work on many interesting topics, including Transformers
       <h2>All Publications</h2>
       <div>
         
-        <article id="frofa24">
-  <h3 class="all-caps">1. Frozen Feature Augmentation for Few-Shot Image Classification</h3>
-  <p><strong>Authors:</strong> Andreas Bär, Neil Houlsby, Mostafa Dehghani, Manoj Kumar</p>
-  <p><strong>First appeared:</strong> 2024-03-15</p>
-  <p><strong>Venue:</strong> Computer Vision and Pattern Recognition (CVPR), 2024</p>
-  <p><a href="https://arxiv.org/abs/2403.10519" target="_blank">Full paper</a></p>
+        <article id="opmo24">
+  <h3 class="all-caps">1. Operation modeling and comparison of actual multi-effect distillation and reverse osmosis desalination plants</h3>
+  <p><strong>Authors:</strong> Sebastian A. Romo, Michael Storch Jr., Jelena Srebric</p>
+  <p><strong>Publication Date:</strong> 2024-02-01</p>
+  <p><strong>Journal:</strong> Desalination, 2024</p>
+  <p><a href="https://doi.org/10.1016/j.desal.2023.117046" target="_blank">Full paper</a></p>
   <div class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#x25BA;</span> Abstract
   </div>
-  <p class="abstract" style="display:none;">Training a linear classifier or lightweight model on top of pretrained vision model outputs, so-called 'frozen features', leads to impressive performance on a number of downstream few-shot tasks. Currently, frozen features are not modified during training. On the other hand, when networks are trained directly on images, data augmentation is a standard recipe that improves performance with no substantial overhead. In this paper, we conduct an extensive pilot study on few-shot image classification that explores applying data augmentations in the frozen feature space, dubbed 'frozen feature augmentation (FroFA)', covering twenty augmentations in total. Our study demonstrates that adopting a deceptively simple pointwise FroFA, such as brightness, can improve few-shot performance consistently across three network architectures, three large pretraining datasets, and eight transfer datasets.</p>
-</article>
-<hr>
-        
-        <article id="gemini23">
-  <h3 class="all-caps">2. Gemini: A Family of Highly Capable Multimodal Models</h3>
-  <p><strong>Authors:</strong> Gemini Team Google</p>
-  <p><strong>First appeared:</strong> 2023-12-19</p>
-  <p><strong>Venue:</strong> arXiv, 2023</p>
-  <p><a href="https://arxiv.org/abs/2312.11805" target="_blank">Full paper</a></p>
-  <div class="abstract-toggle" onclick="toggleAbstract(this)">
-    <span class="arrow">&#x25BA;</span> Abstract
-  </div>
-  <p class="abstract" style="display:none;">This report introduces a new family of multimodal models, Gemini, that exhibit remarkable capabilities across image, audio, video, and text understanding. The Gemini family consists of Ultra, Pro, and Nano sizes, suitable for applications ranging from complex reasoning tasks to on-device memory-constrained use-cases. Evaluation on a broad range of benchmarks shows that our most-capable Gemini Ultra model advances the state of the art in 30 of 32 of these benchmarks - notably being the first model to achieve human-expert performance on the well-studied exam benchmark MMLU, and improving the state of the art in every one of the 20 multimodal benchmarks we examined. We believe that the new capabilities of Gemini models in cross-modal reasoning and language understanding will enable a wide variety of use cases and we discuss our approach toward deploying them responsibly to users.</p>
-</article>
-<hr>
-        
-        <article id="sparse23">
-  <h3 class="all-caps">3. Scaling Laws for Sparsely-Connected Foundation Models</h3>
-  <p><strong>Authors:</strong> Elias Frantar, Carlos Riquelme, Neil Houlsby, Dan Alistarh, Utku Evci</p>
-  <p><strong>First appeared:</strong> 2023-09-15</p>
-  <p><strong>Venue:</strong> International Conference on Learning Representations (ICLR), 2024 [spotlight]</p>
-  <p><a href="https://arxiv.org/abs/2309.08520" target="_blank">Full paper</a></p>
-  <div class="abstract-toggle" onclick="toggleAbstract(this)">
-    <span class="arrow">&#x25BA;</span> Abstract
-  </div>
-  <p class="abstract" style="display:none;">We explore the impact of parameter sparsity on the scaling behavior of Transformers trained on massive datasets (i.e., "foundation models"), in both vision and language domains. In this setting, we identify the first scaling law describing the relationship between weight sparsity, number of non-zero parameters, and amount of training data, which we validate empirically across model and data scales; on ViT/JFT-4B and T5/C4. These results allow us to characterize the "optimal sparsity", the sparsity level which yields the best performance for a given effective model size and training budget. For a fixed number of non-zero parameters, we identify that the optimal sparsity increases with the amount of data used for training. We also extend our study to different sparsity structures (such as the hardware-friendly n:m pattern) and strategies (such as starting from a pretrained dense model). Our findings shed light on the power and limitations of weight sparsity across various parameter and computational settings, offering both theoretical understanding and practical implications for leveraging sparsity towards computational efficiency improvements.</p>
-</article>
-<hr>
-        
-        <article id="soft23">
-  <h3 class="all-caps">4. From Sparse to Soft Mixtures of Experts</h3>
-  <p><strong>Authors:</strong> Joan Puigcerver, Carlos Riquelme, Basil Mustafa, Neil Houlsby</p>
-  <p><strong>First appeared:</strong> 2023-08-23</p>
-  <p><strong>Venue:</strong> International Conference on Learning Representations (ICLR), 2024 [spotlight]</p>
-  <p><a href="https://arxiv.org/abs/2308.00951" target="_blank">Full paper</a></p>
-  <div class="abstract-toggle" onclick="toggleAbstract(this)">
-    <span class="arrow">&#x25BA;</span> Abstract
-  </div>
-  <p class="abstract" style="display:none;">Sparse mixture of expert architectures (MoEs) scale model capacity without large increases in training or inference costs. Despite their success, MoEs suffer from a number of issues: training instability, token dropping, inability to scale the number of experts, or ineffective finetuning. In this work, we proposeSoft MoE, a fully-differentiable sparse Transformer that addresses these challenges, while maintaining the benefits of MoEs. Soft MoE performs an implicit soft assignment by passing different weighted combinations of all input tokens to each expert. As in other MoE works, experts in Soft MoE only process a subset of the (combined) tokens, enabling larger model capacity at lower inference cost. In the context of visual recognition, Soft MoE greatly outperforms standard Transformers (ViTs) and popular MoE variants (Tokens Choice and Experts Choice). For example, Soft MoE-Base/16 requires 10.5x lower inference cost (5.7x lower wall-clock time) than ViT-Huge/14 while matching its performance after similar training. Soft MoE also scales well: Soft MoE Huge/14 with 128 experts in 16 MoE layers has over 40x more parameters than ViT Huge/14, while inference time cost grows by only 2%, and it performs substantially better.</p>
-</article>
-<hr>
-        
-        <article id="navit23">
-  <h3 class="all-caps">5. Patch n' Pack: NaViT, a Vision Transformer for any Aspect Ratio and Resolution</h3>
-  <p><strong>Authors:</strong> Mostafa Dehghani, Basil Mustafa, Josip Djolonga, Jonathan Heek, Matthias Minderer, Mathilde Caron, Andreas Steiner, Joan Puigcerver, Robert Geirhos, Ibrahim Alabdulmohsin, Avital Oliver, Piotr Padlewski, Alexey Gritsenko, Mario Lučić, Neil Houlsby</p>
-  <p><strong>First appeared:</strong> 2023-07-12</p>
-  <p><strong>Venue:</strong> Neural Information Processing Systems (NeurIPS), 2023</p>
-  <p><a href="https://arxiv.org/abs/2307.06304" target="_blank">Full paper</a></p>
-  <div class="abstract-toggle" onclick="toggleAbstract(this)">
-    <span class="arrow">&#x25BA;</span> Abstract
-  </div>
-  <p class="abstract" style="display:none;">The ubiquitous and demonstrably suboptimal choice of resizing images to a fixed resolution before processing them with computer vision models has not yet been successfully challenged. However, models such as the Vision Transformer (ViT) offer flexible sequence-based modeling, and hence varying input sequence lengths. We take advantage of this with NaViT (Native Resolution ViT) which uses sequence packing during training to process inputs of arbitrary resolutions and aspect ratios. Alongside flexible model usage, we demonstrate improved training efficiency for large-scale supervised and contrastive image-text pretraining. NaViT can be efficiently transferred to standard tasks such as image and video classification, object detection, and semantic segmentation and leads to improved results on robustness and fairness benchmarks. At inference time, the input resolution flexibility can be used to smoothly navigate the test-time cost-performance trade-off. We believe that NaViT marks a departure from the standard, CNN-designed, input and modelling pipeline used by most computer vision models, and represents a promising direction for ViTs.</p>
-</article>
-<hr>
-        
-        <article id="owlvit223">
-  <h3 class="all-caps">6. Scaling Open-Vocabulary Object Detection</h3>
-  <p><strong>Authors:</strong> Scaling Open-Vocabulary Object Detection</p>
-  <p><strong>First appeared:</strong> 2023-06-16</p>
-  <p><strong>Venue:</strong> Neural Information Processing Systems (NeurIPS), 2022 [spotlight]</p>
-  <p><a href="https://arxiv.org/abs/2306.09683" target="_blank">Full paper</a></p>
-  <div class="abstract-toggle" onclick="toggleAbstract(this)">
-    <span class="arrow">&#x25BA;</span> Abstract
-  </div>
-  <p class="abstract" style="display:none;">Open-vocabulary object detection has benefited greatly from pretrained vision-language models, but is still limited by the amount of available detection training data. While detection training data can be expanded by using Web image-text pairs as weak supervision, this has not been done at scales comparable to image-level pretraining. Here, we scale up detection data with self-training, which uses an existing detector to generate pseudo-box annotations on image-text pairs. Major challenges in scaling self-training are the choice of label space, pseudo-annotation filtering, and training efficiency. We present the OWLv2 model and OWL-ST self-training recipe, which address these challenges. OWLv2 surpasses the performance of previous state-of-the-art open-vocabulary detectors already at comparable training scales (~10M examples). However, with OWL-ST, we can scale to over 1B examples, yielding further large improvement: With an L/14 architecture, OWL-ST improves AP on LVIS rare classes, for which the model has seen no human box annotations, from 31.2% to 44.6% (43% relative improvement). OWL-ST unlocks Web-scale training for open-world localization, similar to what has been seen for image classification and language modelling.</p>
-</article>
-<hr>
-        
-        <article id="cappa23">
-  <h3 class="all-caps">7. Image Captioners Are Scalable Vision Learners Too</h3>
-  <p><strong>Authors:</strong> Michael Tschannen, Manoj Kumar, Andreas Steiner, Xiaohua Zhai, Neil Houlsby, Lucas Beyer</p>
-  <p><strong>First appeared:</strong> 2023-06-13</p>
-  <p><strong>Venue:</strong> Neural Information Processing Systems (NeurIPS), 2023 [oral]</p>
-  <p><a href="https://arxiv.org/abs/2306.07915" target="_blank">Full paper</a></p>
-  <div class="abstract-toggle" onclick="toggleAbstract(this)">
-    <span class="arrow">&#x25BA;</span> Abstract
-  </div>
-  <p class="abstract" style="display:none;">Contrastive pretraining on image-text pairs from the web is one of the most popular large-scale pretraining strategies for vision backbones, especially in the context of large multimodal models. At the same time, image captioning on this type of data is commonly considered an inferior pretraining strategy. In this paper, we perform a fair comparison of these two pretraining strategies, carefully matching training data, compute, and model capacity. Using a standard encoder-decoder transformer, we find that captioning alone is surprisingly effective: on classification tasks, captioning produces vision encoders competitive with contrastively pretrained encoders, while surpassing them on vision & language tasks. We further analyze the effect of the model architecture and scale, as well as the pretraining data on the representation quality, and find that captioning exhibits the same or better scaling behavior along these axes. Overall our results show that plain image captioning is a more powerful pretraining strategy than was previously believed.</p>
-</article>
-<hr>
-        
-        <article id="palix23">
-  <h3 class="all-caps">8. PaLI-X: On Scaling up a Multilingual Vision and Language Model</h3>
-  <p><strong>Authors:</strong> Xi Chen, Josip Djolonga, Piotr Padlewski, Basil Mustafa, Soravit Changpinyo, Jialin Wu, Carlos Riquelme Ruiz, Sebastian Goodman, Xiao Wang, Yi Tay, Siamak Shakeri, Mostafa Dehghani, Daniel Salz, Mario Lucic, Michael Tschannen, Arsha Nagrani, Hexiang Hu, Mandar Joshi, Bo Pang, Ceslee Montgomery, Paulina Pietrzyk, Marvin Ritter, AJ Piergiovanni, Matthias Minderer, Filip Pavetic, Austin Waters, Gang Li, Ibrahim Alabdulmohsin, Lucas Beyer, Julien Amelot, Kenton Lee, Andreas Peter Steiner, Yang Li, Daniel Keysers, Anurag Arnab, Yuanzhong Xu, Keran Rong, Alexander Kolesnikov, Mojtaba Seyedhosseini, Anelia Angelova, Xiaohua Zhai, Neil Houlsby, Radu Soricut</p>
-  <p><strong>First appeared:</strong> 2023-05-29</p>
-  <p><strong>Venue:</strong> Computer Vision and Pattern Recognition (CVPR), 2024</p>
-  <p><a href="https://arxiv.org/abs/2305.18565" target="_blank">Full paper</a></p>
-  <div class="abstract-toggle" onclick="toggleAbstract(this)">
-    <span class="arrow">&#x25BA;</span> Abstract
-  </div>
-  <p class="abstract" style="display:none;">We present the training recipe and results of scaling up PaLI-X, a multilingual vision and language model, both in terms of size of the components and the breadth of its training task mixture. Our model achieves new levels of performance on a wide-range of varied and complex tasks, including multiple image-based captioning and question-answering tasks, image-based document understanding and few-shot (in-context) learning, as well as object detection, video question answering, and video captioning. PaLI-X advances the state-of-the-art on most vision-and-language benchmarks considered (25+ of them). Finally, we observe emerging capabilities, such as complex counting and multilingual object detection, tasks that are not explicitly in the training mix.</p>
-</article>
-<hr>
-        
-        <article id="vit22b23">
-  <h3 class="all-caps">9. Scaling Vision Transformers to 22 Billion Parameters</h3>
-  <p><strong>Authors:</strong> Mostafa Dehghani, Josip Djolonga, Basil Mustafa, Piotr Padlewski, Jonathan Heek, Justin Gilmer, Andreas Steiner, Mathilde Caron, Robert Geirhos, Ibrahim Alabdulmohsin, Rodolphe Jenatton, Lucas Beyer, Michael Tschannen, Anurag Arnab, Xiao Wang, Carlos Riquelme, Matthias Minderer, Joan Puigcerver, Utku Evci, Manoj Kumar, Sjoerd van Steenkiste, Gamaleldin F. Elsayed, Aravindh Mahendran, Fisher Yu, Avital Oliver, Fantine Huot, Jasmijn Bastings, Mark Patrick Collier, Alexey Gritsenko, Vighnesh Birodkar, Cristina Vasconcelos, Yi Tay, Thomas Mensink, Alexander Kolesnikov, Filip Pavetić, Dustin Tran, Thomas Kipf, Mario Lučić, Xiaohua Zhai, Daniel Keysers, Jeremiah Harmsen, Neil Houlsby</p>
-  <p><strong>First appeared:</strong> 2023-02-10</p>
-  <p><strong>Venue:</strong> International Conference on Machine Learning (ICML), 2023 [oral]</p>
-  <p><a href="https://arxiv.org/abs/2302.05442" target="_blank">Full paper</a></p>
-  <div class="abstract-toggle" onclick="toggleAbstract(this)">
-    <span class="arrow">&#x25BA;</span> Abstract
-  </div>
-  <p class="abstract" style="display:none;">The scaling of Transformers has driven breakthrough capabilities for language models. At present, the largest large language models (LLMs) contain upwards of 100B parameters. Vision Transformers (ViT) have introduced the same architecture to image and video modelling, but these have not yet been successfully scaled to nearly the same degree; the largest dense ViT contains 4B parameters (Chen et al., 2022). We present a recipe for highly efficient and stable training of a 22B-parameter ViT (ViT-22B) and perform a wide variety of experiments on the resulting model. When evaluated on downstream tasks (often with a lightweight linear model on frozen features), ViT-22B demonstrates increasing performance with scale. We further observe other interesting benefits of scale, including an improved tradeoff between fairness and performance, state-of-the-art alignment to human visual perception in terms of shape/texture bias, and improved robustness. ViT-22B demonstrates the potential for "LLM-like" scaling in vision, and provides key steps towards getting there.</p>
+  <p class="abstract" style="display:none;">Modeling actual desalination plants is often restricted by unknown parameters and system specifications that can be difficult to obtain or measure in the field. In this study, we propose an operational data recovery methodology to estimate unknown parameters and construct a simulation that accurately reproduces the operation of actual desalination systems. Furthermore, the data recovery methodology enables desalination modeling with a data-driven iterative sampling scheme to find the most plausible operation scenario. The complete models with data recovery are deployed in four case studies of desalination plants in the field: two multi-effect distillation with thermocompression (MDT) and two reverse osmosis with pressure exchange (ROX). The results show excellent agreement with actual plant operation data, reflected by the maximum difference between simulated and collected data of 5.5 % and 2.5 % for the two MDT plants as well as 6.4 % and 9.3 % for the two ROX plants. Importantly, this study introduced a new theoretical efficiency metric to define optimal operation of a desalination plant. This metric allowed to highlight two plants operating around 20 % below their theoretically achievable recovery. This efficiency calculation and complete models could help plant managers identify underperforming plants and evaluate potential upgrades.</p>
 </article>
 <hr>
         
