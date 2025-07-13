@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website for Sebastian Romo">
+  <title>Sebastian Romo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="go.ico" type="image/x-icon">
+  <script src="toggle_abstract.js"></script>
+</head>
+
+<body class="content-container">
+  <h1>Sebastian Romo</h1>
+
+  <div class="profile-section">
+    <img src="{{ profile_picture }}" alt="Profile Picture">
+    <div class="profile-info">
+      {{ profile }}
+    </div>
+    <div class="contact-social-links">
+      <a href="#" onclick="copyToClipboard('sebastian.romo4@gmail.com')">sebastian.romo@ey.com</a>
+      <a href="https://drive.google.com/file/d/1wODbLRBw7lrk1tG5FWsZByy5AMb4bfGp/view?usp=drive_link" target="_blank">Full CV</a>
+      <a href="https://www.linkedin.com/in/sebastian-romo-ph-d-48bb2998/" target="_blank">Linkedin</a>
+      <a href="https://scholar.google.com/citations?user=4xj-rbYAAAAJ" target="_blank">GScholar</a>
+     </div>
+  </div>
+
+  <main>
+    <article id="about">
+      <h2>About</h2>
+      {{ about }}
+    </article>
+
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="image-panel">
+        <div class="image-row">
+          <div class="image-container">
+            <a href="https://github.com/sromo1/shooterscv">
+              <img src="img/spcv.png" alt="SPCV figure">
+              <span class="overlay-text">Pool Simulator with Computer Vision</span>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="https://patents.google.com/patent/US20220040508A1/en">
+              <img src="img/wrblpv.png" alt="WearablePV figure">
+              <span class="overlay-text">Wearable Personal Ventilation Device Patent</span>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="http://desal.city.umd.edu/">
+              <img src="img/desal.png" alt="Desal figure">
+              <span class="overlay-text">Desal Simulation Software</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div>
+        {% for paper_entry in paper_entries %}
+        {{ paper_entry }}
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+
+    <script>
+    function copyToClipboard(text) {
+      var dummy = document.createElement("textarea");
+      document.body.appendChild(dummy);
+      dummy.value = text;
+      dummy.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummy);
+      alert("`" + text + "`" + " copied to clipboard.");
+    }
+  </script>
+
+</body>
+
+</html>
