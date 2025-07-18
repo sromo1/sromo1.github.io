@@ -110,20 +110,19 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #0066cc;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
-			text-decoration: none;
+			color: #d21846 !important;
+			text-decoration: underline;
 		}
 
 	strong, b {
 		color: #787878;
-		font-weight: 400;
+		font-weight: 600;
 	}
 
 	em, i {
@@ -3224,19 +3223,17 @@ input, select, textarea {
 /* My own edits */
 
 .contact-social-links a {
-  display: block;
-  margin: 0px auto;
-  border-bottom: dotted 1px;
-  width: fit-content;
-  color: #49bf9d;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  	display: block;
+  	margin: 0px auto;
+  	width: fit-content;
+  	color: #0066cc;
+  	text-decoration: none;
+  	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 .contact-social-links a:hover {
-  border-bottom-color: transparent;
-  color: #3eb08f; /* or your preferred hover color */
-  text-decoration: none;
+  color: #d21846; /* or your preferred hover color */
+  text-decoration: underline;
 }
 
 .publications p {
@@ -3252,6 +3249,17 @@ input, select, textarea {
 	margin-left: 2em;    /* shifts the abstract to the right */
 	color: inherit;
 	line-height: 1.35em;  /* reduced interline space */
+}
+
+.abstract-toggle {
+  cursor: pointer;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.abstract-toggle:hover {
+  color: #d21846;
+  text-decoration: underline;
 }
 
 .arrow {
