@@ -18,7 +18,9 @@
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
 					<h1 style="font-size: 2em;"><strong>Sebastian Romo</strong></h1>
-					<i>AI Engineer at the AI &amp; Data practice of Ernst &amp; Young.</i>
+					<i>AI Engineer at the AI &amp; Data practice of EY.</i>
+					<br>
+					</br>
 				</div>
 				<div class="contact-social-links">
       				<a href="#" onclick="copyToClipboard('sebastian.romo4@gmail.com')">sebastian.romo@ey.com</a>
@@ -36,8 +38,7 @@
 						<header class="major">
 							<h1>About</h1>
 						</header>
-						<p><span style="color: red"><strong>Feb 2025:</strong></span> 
-						I am a Senior AI Engineer at the AI &amp; Data practice of Ernst &amp; Young. I help design, develop and implement AI solutions for a wide variety of clients in different industry sectors.</p>
+						<p><span style="color: red"><strong>Feb 2025:</strong></span> I am a Senior AI Engineer at the AI &amp; Data practice of Ernst &amp; Young. I help design, develop and implement AI solutions for a wide variety of clients in different industry sectors.</p>
 						<p>Before my current role, I worked at the Financial Services Risk Management practice of EY providing integrated services across the production pipeline of machine learning models (dataset preparation, model design, training, testing, reporting and validation) used in risk management operations for the largest North American financial institutions.</p>
 						<p>I received my PhD in Mechanical Engineering from the University of Maryland, College Park, under the supervision of Dr. Jelena Srebric. Here is my <a href="https://doi.org/10.13016/8bo1-z4b6">Thesis</a>.</p>
 					</section>
@@ -66,7 +67,7 @@
 				<!-- Three -->
 					<section id="three">
 						<h2>Publications</h2>
-						<div class="publication">
+						<div class="publications">
         					<article id="opmo24">
   							<h3 class="all-caps">1. Operation modeling and comparison of actual multi-effect distillation and reverse osmosis desalination plants</h3>
   							<p><strong>Authors:</strong> Sebastian A. Romo, Michael Storch Jr., Jelena Srebric</p>
@@ -422,6 +423,18 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/toggle_abstract.js"></script>
+	
+	<script>
+		function copyToClipboard(text) {
+			var dummy = document.createElement("textarea");
+			document.body.appendChild(dummy);
+			dummy.value = text;
+			dummy.select();
+			document.execCommand("copy");
+			document.body.removeChild(dummy);
+			alert("`" + text + "`" + " copied to clipboard.");
+		}
+	</script>
 
 	</body>
 </html>
