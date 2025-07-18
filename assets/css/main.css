@@ -3221,6 +3221,8 @@ input, select, textarea {
 
 	}
 
+/* My own edits */
+
 .contact-social-links a {
   display: block;
   margin: 0px auto;
@@ -3243,4 +3245,20 @@ input, select, textarea {
 
 .all-caps {
   text-transform: uppercase;
+}
+
+.abstract {
+	font-size: 95%;      /* 10% smaller than normal text */
+	margin-left: 2em;    /* shifts the abstract to the right */
+	color: inherit;
+	line-height: 1.35em;  /* reduced interline space */
+}
+
+.arrow {
+	display: inline-block;
+	font-size: 0.8em;
+	transition: transform 0.3s;
+}
+.rotated {
+  transform: rotate(90deg);
 }
