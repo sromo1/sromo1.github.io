@@ -1,3 +1,3 @@
-AI Engineer at the AI & Data practice of Ernst & Young.
+AI Engineer at the AI & Data practice of EY.
 
-I'm passionate about AI. I want to understand language models and, along the way, understand humans better.
+I aim to deepen my grasp of language models and better understand human cognition.
