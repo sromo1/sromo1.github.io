@@ -3008,6 +3008,10 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+			#header {
+				padding: 6em 3em 3em 3em;
+				width: 25%;
+			}
 
 	}
 
